@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+.paper {
+    padding:85px 85px;
+}
+body {
+    height:600px;
+    display:flex;
+    align-items :center;
+    background-image :url('images/pp.jpeg');
+    background-size :100px;
+    background-position :center center;
+}
+.paper {
+    position : absolute;
+    background-image : url('images/paper.jpg');
+    background-size :450px;
+    background-position :center center;
+    padding: 20px 100px;
+    transform:(-5deg);
+    box-shadow : 1px 15px 20px 0px rgba(0,0,0,0.5);
+}
+.paper.heart {
+    position:relative;
+    width:200px;
+    height:100px;
+    padding: 0;
+    border-radius : 50%;
+}
+.paper.image {
+    padding :10px;
+}
+.paper.image p{
+    font-size: 35px;
+    height:65px;
+}
+img{
+    max-height:200px;
+    width:100%;
+    user-select: none ;
+}
+.paper.heart::after {
+    content :"";
+    background-image :url('images/heart.webp');
+    width:150%;
+    height:150%;
+    position :absolute ;
+    top :0;
+    left :0;
+    background-size :160px;
+    background-position : center center ;
+    background-repeat :no-repeat;
+    opacity : 0.6; 
+    object-fit: cover;
+
+
+}
+
+
+p{
+    font-family :'zeyada';
+    font-size :50px;
+    color:rgb(0,0,100);
+    opacity :0.75;
+    user-select :none;
+}
+.paper.small {
+    width: 800px;
+    height: 200px;
+    overflow: auto;
+    
+}
